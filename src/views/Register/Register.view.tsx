@@ -1,6 +1,8 @@
+import { useNavigate } from 'react-router-dom'
 import style from './Register.module.css'
 
 export const Register = () => {
+  const navigate = useNavigate()
   return (
     <div className={style.bg}>
       <div className={style.bgNegro}>
@@ -73,8 +75,10 @@ export const Register = () => {
           </form>
 
           <div className={style.text}>
-            ¿Ya tienes una cuenta?{' '}
-            <span className={style.option}>Iniciar Sesión.</span>
+            ¿Ya tienes una cuenta?
+            <span onClick={() => navigate('/login')}  className={style.option}>
+              Iniciar Sesión.
+            </span>
           </div>
         </div>
       </div>

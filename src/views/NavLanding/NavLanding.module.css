@@ -1,0 +1,92 @@
+.container {
+  position: sticky;
+  top: 0;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  height: 4.5rem;
+  background-color: #5145d3a1;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px #000;
+  backdrop-filter: blur(10px);
+}
+
+.company {
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 0 1rem;
+  text-shadow: 0 4px 4px #00000080;
+}
+
+.navButtons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.buttonNav {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: 0.8s;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  color: #fff;
+}
+
+.selectedButton {
+  cursor: pointer;
+  background-color: #292060;
+  color: #5b43ee;
+  width: auto;
+  height: auto;
+  padding: 0.5rem 1rem;
+  border-radius: 1.5rem;
+  text-shadow: 0 4px 4px #00000080;
+  box-shadow: 0 3px 5px #00000080;
+  animation: 3s ease-in animacion;
+}
+
+.sesionButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-right: 2rem;
+  gap: 2rem;
+}
+
+.inicioSesion {
+  background-color: #292060;
+  letter-spacing: 1px;
+  color: #5b43ee;
+  width: auto;
+  height: auto;
+  padding: 0.5rem 1rem;
+  border-radius: 1.5rem;
+  text-shadow: 0 4px 4px #00000080;
+  box-shadow: 0 3px 5px #00000080;
+}
+
+.registrate {
+  background-color: #fff;
+  letter-spacing: 1px;
+  color: #000;
+  width: auto;
+  height: auto;
+  padding: 0.5rem 1rem;
+  border-radius: 1.5rem;
+  text-shadow: 0 4px 3px #00000080;
+  box-shadow: 0 3px 5px #00000080;
+}
+
+.inicioSesion:hover,
+.registrate:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}

@@ -1,7 +1,15 @@
-*{
+html{
+  scroll-behavior: smooth;
+}
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   border: none;
   font-family: 'Comfortaa', sans-serif;
+}
+
+body {
+  overflow-x: hidden;
 }
