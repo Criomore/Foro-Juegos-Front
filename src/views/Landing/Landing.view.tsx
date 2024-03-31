@@ -2,6 +2,7 @@ import Post from '../../components/Post/Post.component'
 import NavLanding from '../NavLanding/NavLanding.view'
 import style from './Landins.module.css'
 import { MdKeyboardDoubleArrowDown } from 'react-icons/md'
+import { MdArrowBackIos, MdArrowForwardIos } from 'react-icons/md'
 
 const Landing = () => {
   return (
@@ -30,7 +31,15 @@ const Landing = () => {
             CONOCE LO QUE NUESTROS USUARIOS OPINAN
           </div>
 
-          <Post />
+          <div className={style.container_posts}>
+            <div className={style.icon_post}>
+              <MdArrowBackIos />
+            </div>
+            <Post />
+            <div className={style.icon_post}>
+              <MdArrowForwardIos />
+            </div>
+          </div>
         </div>
       </div>
     </div>

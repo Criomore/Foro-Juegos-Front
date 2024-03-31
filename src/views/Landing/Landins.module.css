@@ -67,8 +67,23 @@
 }
 
 .explorar_text {
-  margin: 4rem auto 3rem;
-  font-size: 3rem;
+  margin: 4rem auto 0.5rem;
+  font-size: 2.5rem;
   color: #fff;
   text-align: center;
+}
+
+.container_posts {
+  display: flex;
+  justify-content: baseline;
+  align-items: baseline;
+}
+
+.icon_post {
+  width: 10%;
+  height: 100%;
+  outline: 1px solid red;
+  display: flex;
+  font-size: 4rem;
+  color: #fff;
 }
