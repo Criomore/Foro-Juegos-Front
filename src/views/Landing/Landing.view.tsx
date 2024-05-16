@@ -30,15 +30,19 @@ const Landing = () => {
           <div id='explorar' className={style.explorar_text}>
             CONOCE LO QUE NUESTROS USUARIOS OPINAN
           </div>
-
           <div className={style.container_posts}>
-            <div className={style.icon_post}>
+            <div className={style.icon_post} onClick={() => {}}>
               <MdArrowBackIos />
             </div>
             <Post />
-            <div className={style.icon_post}>
+            <div className={style.icon_post} onClick={() => {}}>
               <MdArrowForwardIos />
             </div>
+          </div>
+
+          <div className={style.explorar_temas}>
+            <div className={style.temas_text}></div>
+            <div className={style.temas_container}></div>
           </div>
         </div>
       </div>

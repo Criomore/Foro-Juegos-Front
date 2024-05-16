@@ -31,7 +31,7 @@
   border-radius: 0.5rem;
   backdrop-filter: blur(10px);
   background-color: transparent;
-  /* box-shadow: 0 0 10px #fff; */
+  box-shadow: 0 0 10px #0000005e;
   padding-bottom: 2rem;
 }
 
@@ -75,15 +75,21 @@
 
 .container_posts {
   display: flex;
-  justify-content: baseline;
-  align-items: baseline;
+  justify-content: center;
+  align-items: center;
+  outline: 1px solid red;
+  width: 100%;
+  height: auto;
+  cursor: pointer;
 }
 
 .icon_post {
-  width: 10%;
-  height: 100%;
   outline: 1px solid red;
+  width: 10%;
+  height: 20rem;
   display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 4rem;
   color: #fff;
 }
