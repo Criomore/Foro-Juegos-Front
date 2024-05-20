@@ -1,6 +1,6 @@
 import Post from '../../components/Post/Post.component'
 import NavLanding from '../NavLanding/NavLanding.view'
-import style from './Landins.module.css'
+import style from './Landing.module.css'
 import { MdKeyboardDoubleArrowDown } from 'react-icons/md'
 import { MdArrowBackIos, MdArrowForwardIos } from 'react-icons/md'
 
@@ -27,7 +27,7 @@ const Landing = () => {
         </div>
 
         <div className={style.explorar_container}>
-          <div id='explorar' className={style.explorar_text}>
+          <div id='explorar' className={style.subtitle}>
             CONOCE LO QUE NUESTROS USUARIOS OPINAN
           </div>
           <div className={style.container_posts}>
@@ -41,8 +41,12 @@ const Landing = () => {
           </div>
 
           <div className={style.explorar_temas}>
-            <div className={style.temas_text}></div>
-            <div className={style.temas_container}></div>
+            <div className={style.subtitle}>
+              PODRAS ENCONTRAR DIFERENTES TEMAS DE <br /> CONVERSACION COMO
+            </div>
+            <div className={style.temas_container}>
+              <div className={style.cards_row}></div>
+            </div>
           </div>
         </div>
       </div>
