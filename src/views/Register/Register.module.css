@@ -4,7 +4,6 @@
   background-attachment: fixed;
   background-size: cover;
   position: static;
-  display: flex;
   height: auto;
   width: 100%;
 }
@@ -115,8 +114,102 @@
   cursor: pointer;
   color: #4f3dbd;
   font-weight: 800;
+  margin-left: .5rem;
 }
 
 .option:hover {
   opacity: 0.7;
+}
+
+
+/*Modal*/
+
+.modal_container{
+  background-color: #241d4fbd;
+  height: 100vh;
+  width: 100vw;
+  z-index: 100000;
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal_content{
+  background-color: #000;
+  height: 80vh;
+  width: 50vw;
+  border-radius: 1rem;
+}
+
+.modal_text{
+  height: auto;
+  width: auto;
+  margin: 2rem;
+  color: #fff;
+}
+
+.modal_titulo{
+  color: #4f3dbd;
+  font-weight: 900;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.modal_opciones{
+  font-size: 1.3rem;
+  padding: 0 1rem 1rem;
+}
+
+.context{
+  padding: 1rem 0;
+}
+
+.modal_pregunta{
+  font-size: 1.3rem;
+  padding: 0 1rem;
+  text-align: justify;
+}
+
+.buttons{
+  margin: 1rem 0;
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.button_accept{
+  background-color: #4f3dbd;
+  height: 2.5rem;
+  width: 9rem;
+  font-size: 1.3rem;
+  border-radius: .5rem;
+  outline: 3px solid #312486;
+  cursor: pointer;
+}
+
+.button_accept:hover{
+  scale: 1.1;
+}
+
+.button_cancel{
+  background-color: #afafaf;
+  height: 2.5rem;
+  width: 9rem;
+  font-size: 1.3rem;
+  border-radius: .5rem;
+  outline: 3px solid #8a8a8a;
+  cursor: pointer;
+}
+
+.button_cancel:hover{
+  scale: 1.1;
+}
+
+.guion{
+  font-weight: 800;
+  color: #4f3dbd;
 }

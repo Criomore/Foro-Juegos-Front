@@ -1,14 +1,3 @@
-.bg {
-  background-image: url('https://i.pinimg.com/originals/53/58/24/53582465d8ac7c33c1f2888294fed4e3.gif');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  display: flex;
-  width: 100vw;
-  margin: 0;
-  padding: 0;
-}
-
 .container {
   display: flex;
   flex-direction: column;
