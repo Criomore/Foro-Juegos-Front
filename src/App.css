@@ -12,4 +12,13 @@ html{
 
 body {
   overflow-x: hidden;
+  background-image: url('src/assets/1.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  backdrop-filter: blur(5px);
 }
