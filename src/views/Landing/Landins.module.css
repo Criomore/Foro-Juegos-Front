@@ -31,7 +31,7 @@
   border-radius: 0.5rem;
   backdrop-filter: blur(10px);
   background-color: transparent;
-  /* box-shadow: 0 0 10px #fff; */
+  box-shadow: 0 0 10px #0000005e;
   padding-bottom: 2rem;
 }
 
@@ -67,8 +67,27 @@
 }
 
 .explorar_text {
-  margin: 4rem auto 3rem;
-  font-size: 3rem;
+  margin: 4rem auto 0.5rem;
+  font-size: 2.5rem;
   color: #fff;
   text-align: center;
+}
+
+.container_posts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.icon_post {
+  width: 10%;
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  color: #fff;
 }

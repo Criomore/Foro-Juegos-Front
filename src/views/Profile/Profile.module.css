@@ -4,3 +4,23 @@
   width: 100vw;
   color: aliceblue;
 }
+
+.container_goodluck{
+  background-color: #4F3DBD;
+  text-align: center;
+  padding: 5px;
+}
+
+.container_portada{
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(225, 240, 15);
+  width: 100vw;
+  height: 45%;
+}
+
+.portada_img{
+  background-color: rgba(0, 0, 255, 0.336);
+  width: 100vw;
+  height: 100%;
+}
