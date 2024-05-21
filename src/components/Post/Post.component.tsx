@@ -15,11 +15,7 @@ const Post = () => {
           <div className={style.info_name}>NutriaAguada</div>
           <div className={style.info_category}>#Soy_Nuti</div>
         </div>
-        <div className={style.userdata_date}>
-          19 MAR
-          <br />
-          2024
-        </div>
+        <div className={style.userdata_date}>19 MAR 2024</div>
       </div>
       <div className={style.post_body}>
         <div className={style.body_description}>

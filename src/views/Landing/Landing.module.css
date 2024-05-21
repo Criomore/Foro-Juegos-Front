@@ -1,5 +1,5 @@
 .bg {
-  background-image: url('../../assets/fondo_azul-transformed.jpeg');
+  background-image: url('https://i.pinimg.com/originals/53/58/24/53582465d8ac7c33c1f2888294fed4e3.gif');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -72,7 +72,7 @@
   color: #fff;
   text-align: center;
   text-shadow: 0 2px 5px #564ad8;
-  scroll-margin-top: 4.1ex;
+  scroll-margin-top: 4.3ex;
 }
 
 .container_posts {

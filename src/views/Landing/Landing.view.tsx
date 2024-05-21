@@ -1,8 +1,8 @@
+import { MdKeyboardDoubleArrowDown } from 'react-icons/md'
 import Post from '../../components/Post/Post.component'
 import NavLanding from '../NavLanding/NavLanding.view'
 import style from './Landing.module.css'
-import { MdKeyboardDoubleArrowDown } from 'react-icons/md'
-import { MdArrowBackIos, MdArrowForwardIos } from 'react-icons/md'
+import { Carousel } from 'react-bootstrap'
 
 const Landing = () => {
   return (
@@ -30,22 +30,24 @@ const Landing = () => {
           <div id='explorar' className={style.subtitle}>
             CONOCE LO QUE NUESTROS USUARIOS OPINAN
           </div>
-          <div className={style.container_posts}>
-            <div className={style.icon_post} onClick={() => {}}>
-              <MdArrowBackIos />
-            </div>
-            <Post />
-            <div className={style.icon_post} onClick={() => {}}>
-              <MdArrowForwardIos />
-            </div>
-          </div>
+          <Carousel interval={5000}>
+            <Carousel.Item>
+              <Post />
+            </Carousel.Item>
+            <Carousel.Item>
+              <Post />
+            </Carousel.Item>
+            <Carousel.Item>
+              <Post />
+            </Carousel.Item>
+            <Carousel.Item>
+              <Post />
+            </Carousel.Item>
+          </Carousel>
 
           <div className={style.explorar_temas}>
             <div className={style.subtitle}>
               PODRAS ENCONTRAR DIFERENTES TEMAS DE <br /> CONVERSACION COMO
-            </div>
-            <div className={style.temas_container}>
-              <div className={style.cards_row}></div>
             </div>
           </div>
         </div>
