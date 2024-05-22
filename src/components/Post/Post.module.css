@@ -1,36 +1,44 @@
 .post_container {
   display: flex;
   flex-direction: column;
-  background-color: #59d173b3;
+  background-color: #d4d2d2;
   width: 80%;
-  height: auto;
   margin: 0 auto;
   border-radius: 0.5rem;
-  outline: 2px solid #000;
+  outline: 3px solid #000000;
   box-shadow: 0 0 10px #000;
-  text-shadow: 0 3px 5px #000000d5;
-  scale: 0.8;
+  font-weight: 600;
+  scale: 0.9;
 }
 
 .post_userdata {
   width: 100%;
   display: flex;
   align-items: center;
+  padding: 0.2rem 0;
+}
+
+.img_container {
+  width: 10%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1rem 0 3rem;
 }
 
 .userdata_img {
-  width: 9%;
+  width: 100%;
   height: auto;
   border-radius: 50%;
   overflow: hidden;
   box-sizing: border-box;
-  margin: 1.5rem 2rem 0.5rem;
-  outline: 2px solid #000;
+  margin: 0.7rem;
+  outline: 3px solid #000;
   box-shadow: 0 0 10px #000;
 }
 
 .userdata_info {
-  outline: 1px solid red;
   display: flex;
   flex-wrap: wrap;
   width: 80%;
@@ -51,30 +59,21 @@
 
 .userdata_date {
   display: flex;
-  font-size: 1.5rem;
-  width: 20%;
+  font-size: 2rem;
+  width: 25%;
   text-align: center;
-  justify-content: center;
-  outline: 1px solid red;
+  justify-content: start;
 }
 
 .post_body {
-  background: #ffffffb2;
-  width: 100%;
+  background: #ffffff;
+  width: 90%;
   margin: 1rem auto 0;
-  outline: 1px solid #000;
+  border-radius: 0.5rem;
+  outline: 2px solid #000;
   padding: 1rem 1.5rem;
   font-size: 1.8rem;
   box-shadow: 0 0 10px #000;
-  text-shadow: none;
-  outline: 1px solid red;
-
-}
-
-.body_description{
-  width: 95%;
-  outline: 1px solid red;
-  margin: 0 auto;
 }
 
 .body_desciption_author {
@@ -82,8 +81,6 @@
   display: flex;
   justify-content: flex-end;
   width: 100%;
-  outline: 1px solid red;
-
 }
 
 .post_interactions {
@@ -91,7 +88,7 @@
   display: flex;
   align-items: center;
   height: auto;
-  margin: 1rem auto;
+  margin: 1.5rem auto;
   font-size: 1.5rem;
 }
 
@@ -102,21 +99,19 @@
 }
 
 .interactions_like {
-  background: #59d173b4;
-  border: 1px solid #159330;
+  background: #59d173;
+  border: 2px solid #159330;
   border-radius: 0.5rem;
   padding: 0.3rem 1rem;
   box-shadow: 0 0 3px #000;
-  cursor: pointer;
 }
 
 .interactions_dislike {
-  background: #d15959b4;
-  border: 1px solid #931515;
+  background: #d15959;
+  border: 2px solid #931515;
   border-radius: 0.5rem;
   padding: 0.3rem 1rem;
   box-shadow: 0 0 3px #000;
-  cursor: pointer;
 }
 
 .post_interactions_score {
@@ -126,12 +121,11 @@
 }
 
 .score {
-  background: #b259d1b4;
-  border: 1px solid #721593;
+  background: #b259d1;
+  border: 2px solid #721593;
   border-radius: 0.5rem;
   padding: 0.3rem 1rem;
   box-shadow: 0 0 3px #000;
-  cursor: pointer;
 }
 
 .post_interactions_share {
@@ -147,10 +141,10 @@
   align-items: center;
   gap: 0.5rem;
   background: #fff;
-  border: 1px solid #535353;
+  border: 2px solid #535353;
   border-radius: 0.5rem;
   padding: 0.3rem 1rem;
-  cursor: pointer;
+
   box-shadow: 0 0 3px #000;
 }
 
@@ -164,7 +158,6 @@
   border-radius: 0.5rem;
   padding: 0.3rem 1rem;
   box-shadow: 0 0 3px #000;
-  cursor: pointer;
 }
 
 .icon {

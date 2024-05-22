@@ -6,11 +6,13 @@ const Post = () => {
   return (
     <div className={style.post_container}>
       <div className={style.post_userdata}>
-        <img
-          className={style.userdata_img}
-          src='https://pbs.twimg.com/profile_images/689170748418711554/-RGSBLf9_400x400.jpg'
-          alt='img'
-        />
+        <div className={style.img_container}>
+          <img
+            className={style.userdata_img}
+            src='https://pbs.twimg.com/profile_images/689170748418711554/-RGSBLf9_400x400.jpg'
+            alt='img'
+          />
+        </div>
         <div className={style.userdata_info}>
           <div className={style.info_name}>NutriaAguada</div>
           <div className={style.info_category}>#Soy_Nuti</div>

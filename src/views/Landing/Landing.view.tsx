@@ -4,6 +4,7 @@ import NavLanding from '../NavLanding/NavLanding.view'
 import style from './Landing.module.css'
 import { Carousel } from 'react-bootstrap'
 
+import Card from 'react-bootstrap/Card'
 const Landing = () => {
   return (
     <div className={style.bg}>
@@ -30,16 +31,11 @@ const Landing = () => {
           <div id='explorar' className={style.subtitle}>
             CONOCE LO QUE NUESTROS USUARIOS OPINAN
           </div>
-          <Carousel interval={5000}>
-            <Carousel.Item>
-              <Post />
-            </Carousel.Item>
-            <Carousel.Item>
-              <Post />
-            </Carousel.Item>
-            <Carousel.Item>
-              <Post />
-            </Carousel.Item>
+          <Carousel
+            className={style.carousel}
+            interval={5000}
+            indicators={false}
+          >
             <Carousel.Item>
               <Post />
             </Carousel.Item>
@@ -49,6 +45,26 @@ const Landing = () => {
             <div className={style.subtitle}>
               PODRAS ENCONTRAR DIFERENTES TEMAS DE <br /> CONVERSACION COMO
             </div>
+
+            <Carousel
+              className={style.carousel}
+              interval={5000}
+              indicators={false}
+            >
+              <Carousel.Item>
+                <Card style={{ width: '16rem' }}>
+                  <Card.Img
+                    variant='top'
+                    src='https://phantom-expansion.unidadeditorial.es/c619f3b628ab45e19cc80ceef95ddd69/f/jpg/assets/multimedia/imagenes/2020/12/15/16080660925480.jpg'
+                  />
+                  <Card.Body>
+                    <Card.Text className='text-center fs-5'>
+                      Tecnologia
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </Carousel.Item>
+            </Carousel>
           </div>
         </div>
       </div>
