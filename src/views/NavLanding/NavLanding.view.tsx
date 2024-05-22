@@ -1,54 +1,34 @@
-import { useState } from 'react'
+import { Navbar, Nav, Button, Form } from 'react-bootstrap'
 import style from './NavLanding.module.css'
-import { useNavigate } from 'react-router-dom'
 
 const NavLanding = () => {
-  const [stateClickNav, setStateClickNav] = useState('')
-  const navigate = useNavigate()
   return (
-    <div className={style.container}>
-      <div className={style.company}>
-        CRIOMORE <br /> COMPANY
-      </div>
-      <div className={style.navButtons}>
-        <a
-          className={
-            stateClickNav === 'Explorar'
-              ? style.selectedButton
-              : style.buttonNav
-          }
-          onClick={() => setStateClickNav('Explorar')}
-          href='#explorar'
-        >
-          Explorar
-        </a>
-        <div
-          className={
-            stateClickNav === 'Info' ? style.selectedButton : style.buttonNav
-          }
-          onClick={() => setStateClickNav('Info')}
-        >
-          Info
-        </div>
-        <div
-          className={
-            stateClickNav === 'Nosotros'
-              ? style.selectedButton
-              : style.buttonNav
-          }
-          onClick={() => setStateClickNav('Nosotros')}
-        >
-          Nosotros
-        </div>
-      </div>
-      <div className={style.sesionButtons}>
-        <div onClick={() => navigate('/login')} className={style.inicioSesion}>
-          Inicia Sesion
-        </div>
-        <div onClick={() => navigate('/register')} className={style.registrate}>
-          Registrate
-        </div>
-      </div>
+    <div>
+      <Navbar expand='lg' sticky='top' className={style.navbar}>
+        <Navbar.Brand className='text-light mx-5'>Criomore Company</Navbar.Brand>
+        <Navbar.Toggle aria-controls='basic-navbar-nav' />
+        <Navbar.Collapse id='basic-navbar-nav' className='d-flex align-items-center justify-content-around'>
+          <Nav className='ml-auto'>
+            <Nav.Link href='explorar' className='text-light mx-3'>
+              Explorar
+            </Nav.Link>
+            <Nav.Link href='info' className='text-light mx-3'>
+              Info
+            </Nav.Link>
+            <Nav.Link href='sobre-nosotros' className='text-light mx-3'>
+              Nosotros
+            </Nav.Link>
+          </Nav>
+          <Form className='d-flex'>
+            <Button variant='outline-primary' className={style.inicioSesion}>
+              Inicia Sesion
+            </Button>
+            <Button variant='outline-secondary' className={style.registrate}>
+              Registrate
+            </Button>
+          </Form>
+        </Navbar.Collapse>
+      </Navbar>
     </div>
   )
 }
