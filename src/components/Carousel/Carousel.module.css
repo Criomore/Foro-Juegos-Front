@@ -1,0 +1,36 @@
+.carousel {
+  width: 100vw;
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  padding: 1rem;
+
+}
+
+.container {
+  display: flex;
+  animation: 10s slide infinite linear;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.container_invert {
+  display: flex;
+  animation: 10s slide infinite linear reverse;
+}
+
+
+.carousel:hover .container {
+  animation-play-state: paused;
+}
+
+.carousel:hover .container_invert {
+  animation-play-state: paused;
+}
