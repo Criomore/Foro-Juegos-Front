@@ -14,7 +14,11 @@ const Landing = () => {
         <div className={style.welcome_container}>
           <div className={style.welcome_cart}>
             <div className={style.welcome_title}>
+              <img src='src/assets/camaleon1.gif' className={style.camaleon} />
               BIENVENIDO A CRIOMORE COMPANY
+              <a className={style.icon_container} href='#explorar'>
+                <MdKeyboardDoubleArrowDown className={style.icon} />
+              </a>
             </div>
             <div className={style.welcome_text}>
               Un lugar donde puedes compartir tus ideas, abrir debates sobre tus
@@ -22,10 +26,8 @@ const Landing = () => {
               <br />
               Explora un poco de lo que te podemos ofrecer en nuestra comunidad
             </div>
+            <img src='src/assets/camaleon1.gif' className={style.camaleon1} />
           </div>
-          <a className={style.icon_container} href='#explorar'>
-            <MdKeyboardDoubleArrowDown className={style.icon} />
-          </a>
         </div>
 
         <div className={style.explorar_container}>
