@@ -80,8 +80,13 @@
   width: 10%;
   height: 20rem;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   font-size: 4rem;
   color: #fff;
+}
+
+.container_carousel {
+  display: flex; 
+  flex-direction: column;
 }

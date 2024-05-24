@@ -2,9 +2,10 @@ import { MdKeyboardDoubleArrowDown } from 'react-icons/md'
 import Post from '../../components/Post/Post.component'
 import NavLanding from '../NavLanding/NavLanding.view'
 import style from './Landing.module.css'
-import { Carousel } from 'react-bootstrap'
 
-import Card from 'react-bootstrap/Card'
+import { Carousel } from 'react-bootstrap'
+import ThemeCarousel from '../ThemesCarousel/ThemeCarousel.component'
+
 const Landing = () => {
   return (
     <div className={style.bg}>
@@ -46,25 +47,7 @@ const Landing = () => {
               PODRAS ENCONTRAR DIFERENTES TEMAS DE <br /> CONVERSACION COMO
             </div>
 
-            <Carousel
-              className={style.carousel}
-              interval={5000}
-              indicators={false}
-            >
-              <Carousel.Item>
-                <Card style={{ width: '16rem' }}>
-                  <Card.Img
-                    variant='top'
-                    src='https://phantom-expansion.unidadeditorial.es/c619f3b628ab45e19cc80ceef95ddd69/f/jpg/assets/multimedia/imagenes/2020/12/15/16080660925480.jpg'
-                  />
-                  <Card.Body>
-                    <Card.Text className='text-center fs-5'>
-                      Tecnologia
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
-              </Carousel.Item>
-            </Carousel>
+            <ThemeCarousel />
           </div>
         </div>
       </div>
