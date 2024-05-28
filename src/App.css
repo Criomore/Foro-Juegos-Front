@@ -1,4 +1,4 @@
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -12,7 +12,7 @@ html{
 
 body {
   overflow-x: hidden;
-  background-image: url('src/assets/fondo general.gif');
+  background-image: url('src/assets/fondo_general.gif');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
