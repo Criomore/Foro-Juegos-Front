@@ -1,16 +1,16 @@
-.profile_container{
+.profile_container {
   height: 100vh;
   width: 100vw;
   color: aliceblue;
 }
 
-.container_goodluck{
-  background-color: #4F3DBD;
+.container_goodluck {
+  background-color: #4f3dbd;
   text-align: center;
   padding: 5px;
 }
 
-.container_portada{
+.container_portada {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -20,8 +20,30 @@
   overflow: hidden;
 }
 
-.portada{
+.portada {
   width: 100vw;
   height: auto;
   image-rendering: optimizeQuality;
+}
+
+.portada_info {
+  position: absolute;
+  background: #00000070;
+  top: 27%;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+}
+
+.contain_names{
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  border: 3px solid red;
+}
+
+.text {
+  color: #fff;
+  font-size: 1.5rem;
+  padding-bottom: .5rem;
 }
