@@ -29,10 +29,18 @@
   font-size: 2rem;
   font-weight: 600;
   margin: 0 0.5rem;
+  text-align: left;
+  width: 100%;
+  padding-left: 1rem;
 }
 
 .list_container {
   font-size: 1rem;
   margin: 0 0.5rem;
   font-weight: 600;
+  width: 100%;
+}
+
+.item_list{
+  text-align: left;
 }

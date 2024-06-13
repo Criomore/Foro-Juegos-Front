@@ -34,7 +34,7 @@
   text-shadow: 3px 3px 0 #564ad8;
 }
 
-.camaleon{
+.camaleon {
   width: 20%;
   z-index: 10000;
   position: absolute;
@@ -42,7 +42,7 @@
   bottom: 68%;
 }
 
-.camaleon1{
+.camaleon1 {
   width: 20%;
   z-index: 10000;
   position: absolute;
@@ -110,6 +110,14 @@
 }
 
 .container_carousel {
-  display: flex; 
+  display: flex;
   flex-direction: column;
+}
+
+.container_cardInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+  scroll-margin-top: 4ex;
 }

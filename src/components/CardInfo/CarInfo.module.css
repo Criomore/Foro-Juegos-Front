@@ -1,0 +1,29 @@
+.container {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.image {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.title {
+  width: 100%;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.description {
+  text-align: center;
+  text-justify: auto;
+  width: 80%;
+  font-size: 1.2rem;
+}
