@@ -1,49 +1,83 @@
 .profile_container {
-  height: 100vh;
   width: 100vw;
-  color: aliceblue;
-}
-
-.container_goodluck {
-  background-color: #4f3dbd;
-  text-align: center;
-  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .container_portada {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  height: 45%;
+  width: 100%;
+  height: 16rem;
   overflow: hidden;
+  border-bottom: 2px solid #000;
 }
 
 .portada {
+  image-rendering: optimizeQuality;
+  display: flex;
+  object-fit: cover;
   width: 100vw;
   height: auto;
-  image-rendering: optimizeQuality;
 }
 
 .portada_info {
-  position: absolute;
-  background: #00000070;
-  top: 27%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
   width: 100%;
-  padding: 1rem;
   display: flex;
 }
+.contain_image {
+  width: 15rem;
+  height: 15rem;
+  display: flex;
+  overflow: hidden;
+  border-radius: 50%;
+  position: absolute;
+  border: 2px solid #000;
+  top: 0.5rem;
+  z-index: 100;
+}
 
-.contain_names{
+.user_info {
+  height: 5rem;
+  display: grid;
+  grid-template-columns: 28% 22% 10% 39%;
+  color: #fff;
+  width: 100%;
+  background: #0000007e;
+  position: relative;
+  top: -5rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.contain_names {
   display: flex;
   flex-direction: column;
-  width: 20%;
-  border: 3px solid red;
+  justify-content: center;
+  align-items: center;
 }
 
-.text {
-  color: #fff;
-  font-size: 1.5rem;
-  padding-bottom: .5rem;
+.apodo {
+  text-shadow: 2px 2px 3px #4F3DBD;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.contain_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.contain_status {
+  grid-column: 4/5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
