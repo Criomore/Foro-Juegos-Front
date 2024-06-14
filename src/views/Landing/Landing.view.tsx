@@ -1,5 +1,5 @@
 import { MdKeyboardDoubleArrowDown } from 'react-icons/md'
-import { Carousel } from 'react-bootstrap'
+import { Carousel, Image } from 'react-bootstrap'
 
 import style from './Landing.module.css'
 import Post from '../../components/Post/Post.component'
@@ -75,6 +75,59 @@ const Landing = () => {
               title='Crea'
               description='Puedes crear tus publicaciones, añadir fotos o videos, categorizarlo con un hastag para que las personas conozcan sobre que tema estas hablando.'
             />
+          </div>
+        </div>
+
+        <div className={style.info_message}>
+          <div className={style.subtitle}>DE NOSOTROS PARA USTEDES</div>
+          <div className={style.thanks}>
+            Somos <span className={style.owners}>Capi & Nuti</span>, una pareja
+            colombiana apasionada por la libre expresión y el intercambio de
+            ideas. Creamos este foro con el objetivo de proporcionar un espacio
+            inclusivo y seguro donde todas las personas puedan hablar sobre los
+            temas que les importan, sin miedo a ser censuradas o juzgadas.{' '}
+            <br />
+            <br /> Nuestro compromiso es proporcionar un ambiente acogedor y
+            respetuoso, donde cada miembro de la comunidad se sienta valorado y
+            escuchado. Animamos a todos a participar activamente, compartir sus
+            experiencias, plantear preguntas, debatir ideas y aprender unos de
+            otros. <br />
+            <br /> ¡Gracias por unirte a nosotros en esta emocionante aventura!
+            Esperamos que
+            <span className={style.owners}> Criomore</span> se convierta en un
+            lugar donde puedas expresarte libremente y encontrar inspiración,
+            apoyo y camaradería en la diversidad. <br />
+            <br /> ¡Adelante y hazte oír! <br />
+            <br /> Atentamente, <br />{' '}
+            <span className={style.owners}>Capi & Nuti</span>
+          </div>
+        </div>
+
+        <div className={style.footer}>
+          <div className={style.contain_footer}>
+            <div className={style.footer_title}>CRIOMORE COMPANY</div>
+            <Image
+              src='https://i.ibb.co/5F1PjJz/criomore-logo.jpg'
+              className={style.logo}
+            />
+          </div>
+          <div className={style.social}>
+            <div className={style.red}>
+              <span className={style.tt}>TikTok</span>
+              <br /> Criomore1331
+            </div>
+            <div className={style.red}>
+              <span className={style.yt}>Youtube</span>
+              <br /> Criomore1331
+            </div>
+            <div className={style.red}>
+              <span className={style.tw}>Twitch</span>
+              <br /> Criomore
+            </div>
+            <div className={style.red}>
+              <span className={style.ins}>Instagram</span>
+              <br /> Criomore1331
+            </div>
           </div>
         </div>
       </div>

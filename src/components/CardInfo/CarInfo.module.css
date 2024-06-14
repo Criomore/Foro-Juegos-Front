@@ -22,8 +22,8 @@
 }
 
 .description {
-  text-align: center;
   text-justify: auto;
   width: 80%;
   font-size: 1.2rem;
+  text-align: justify;
 }
