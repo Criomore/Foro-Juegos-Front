@@ -36,6 +36,33 @@ export const Profile = () => {
           </div>
         </div>
       </div>
+      <div className={style.totales}>
+        <div className={style.topic}>
+          <div className={style.title}>TEMAS DE INTERES</div>
+          <div className={style.description}>
+            Juegos - Redes sociales - Estilo de vida
+          </div>
+        </div>
+        <div className={style.hashtag}>
+          <div className={style.title}>HASHTAGS MAS USADOS</div>
+          <div className={style.description}>
+            #LADAWLDKM - #OAIDWOD - #MAINCRA
+          </div>
+        </div>
+        <div className={style.total_posts}>
+          <div className={style.title}>PUBLICACIONES</div>
+          <div className={style.numbers}>10</div>
+        </div>
+        <div className={style.total_followers}>
+          <div className={style.title}>SEGUIDORES</div>
+          <div className={style.numbers}>31</div>
+        </div>
+        <div className={style.total_followed}>
+          <div className={style.title}>SEGUIDOS</div>
+          <div className={style.numbers}>13</div>
+        </div>
+      </div>
+      
     </div>
   )
 }
