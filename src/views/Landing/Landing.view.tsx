@@ -15,8 +15,11 @@ const Landing = () => {
         <div className={style.welcome_container}>
           <div className={style.welcome_cart}>
             <div className={style.welcome_title}>
-              <img src='src/assets/camaleon1.gif' className={style.camaleon} />
-              BIENVENIDO A CRIOMORE COMPANY
+              BIENVENIDO A CRIOMORE
+              <Image
+                src='https://i.ibb.co/5F1PjJz/criomore-logo.jpg'
+                className={style.logo_1}
+              />
               <a className={style.icon_container} href='#explorar'>
                 <MdKeyboardDoubleArrowDown className={style.icon} />
               </a>
@@ -25,9 +28,8 @@ const Landing = () => {
               Un lugar donde puedes compartir tus ideas, abrir debates sobre tus
               temas favoritos y adquirir nuevas experiencias y amigos. <br />
               <br />
-              Explora un poco de lo que te podemos ofrecer en nuestra comunidad
+              Explora un poco de lo que te podemos ofrecer en nuestra comunidad.
             </div>
-            <img src='src/assets/camaleon1.gif' className={style.camaleon1} />
           </div>
         </div>
 
@@ -61,19 +63,19 @@ const Landing = () => {
             <CardInfo
               image='https://plus.unsplash.com/premium_photo-1683842189634-df5b18bf9e9d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
               title='Crea'
-              description='Puedes crear tus publicaciones, añadir fotos o videos, categorizarlo con un hastag para que las personas conozcan sobre que tema estas hablando.'
+              description='Puedes crear tus publicaciones añadiendo fotos o videos, y tambien podras categorizarlo con un hastag para que las personas conozcan sobre que tema estas hablando.'
             />
 
             <CardInfo
               image='https://images.unsplash.com/photo-1700072356638-1bbf03138a15?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
               title='Vota'
-              description='Cada publicacion tendra un campo de votos rojos y votos verdes, los votos rojos se le restaran a los votos verdes y este sera tu ‘score’ que entre mayor sea el numero mas visibilidad tendras.'
+              description='Cada publicacion tendra votos rojos y votos verdes, los votos rojos se le restaran a los votos verdes y este sera tu ‘score’, entre mayor sea el numero mas visibilidad tendras.'
             />
 
             <CardInfo
               image='https://plus.unsplash.com/premium_photo-1677252438450-b779a923b0f6?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-              title='Crea'
-              description='Puedes crear tus publicaciones, añadir fotos o videos, categorizarlo con un hastag para que las personas conozcan sobre que tema estas hablando.'
+              title='Comenta'
+              description='Podras dar tu opinion al respecto o generar rumbo a la publicacion. Pero ten cuidado con lo que comentas debe estar orientado siempre al respeto y empatia si te descuidas te podrian banear.'
             />
           </div>
         </div>

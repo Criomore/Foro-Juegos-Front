@@ -23,32 +23,25 @@
   background-color: #0000004d;
   box-shadow: 0 0 10px #0000005e;
   padding-bottom: 2rem;
+
 }
 
 .welcome_title {
   width: 50%;
-  padding: 5rem 0;
+  padding: 2rem 0;
   text-align: center;
   font-size: 3.2rem;
   font-weight: bolder;
   text-shadow: 3px 3px 0 #564ad8;
+  display: flex;
+  flex-direction: column;
 }
 
-.camaleon {
-  width: 20%;
-  z-index: 10000;
-  position: absolute;
-  right: 90%;
-  bottom: 68%;
-}
-
-.camaleon1 {
-  width: 20%;
-  z-index: 10000;
-  position: absolute;
-  left: 92%;
-  top: 68%;
-  transform: rotateY(180deg);
+.logo_1 {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 5rem;
+  margin: 1rem auto;
 }
 
 .welcome_text {
@@ -60,7 +53,7 @@
 .icon_container {
   z-index: 1000;
   position: absolute;
-  top: 65%;
+  top: 75%;
   right: 70%;
   margin: 2rem auto 0;
 }
@@ -119,15 +112,15 @@
   justify-content: center;
   align-items: center;
   margin: 2rem 0;
-  scroll-margin-top: 4ex;
+  scroll-margin-top: 14ex;
 }
 
 .thanks {
   background-image: url('https://images.unsplash.com/photo-1617309215127-ebeb4eddeba5?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
   color: #fff;
   padding: 1.5rem;
-  font-size: 1.2rem;
-  margin: 1rem 8rem 2rem;
+  font-size: 1.1rem;
+  margin: 1rem 12rem 2rem;
   text-align: justify;
   border-radius: 2rem;
   outline: 5px groove #a5a5a5;
@@ -140,15 +133,16 @@
 
 .footer {
   background-color: #000;
-  padding: 2rem;
+  margin-top: 3rem;
   height: 10%;
   width: auto;
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 .contain_footer {
-  width: 50%;
+  width: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -192,11 +186,14 @@
 }
 
 .yt {
-  color: #ff0000;
+  color: #fc3636;
+  text-shadow: 2px 2px 3px #bb1f1f, -2px -2px 3px #bb1f1f;
+
 }
 
 .tw {
-  color: #681ce2;
+  color: #7b31f1;
+  text-shadow: 2px 2px 3px #751fbb, -2px -2px 3px #631fbb;
 }
 
 .ins {
