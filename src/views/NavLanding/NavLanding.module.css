@@ -2,8 +2,6 @@
   background-color: #000000c0;
   font-weight: 600;
   z-index: 1000;
-  position: sticky;
-  top: .1px !important;
 }
 
 .logo {

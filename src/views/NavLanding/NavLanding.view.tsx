@@ -4,7 +4,7 @@ import style from './NavLanding.module.css'
 const NavLanding = () => {
   return (
     <div>
-      <Navbar expand='lg' sticky='top' className={style.navbar}>
+      <Navbar expand='lg' fixed='top' className={style.navbar}>
         <img
           src='https://i.ibb.co/5F1PjJz/criomore-logo.jpg'
           width='35'

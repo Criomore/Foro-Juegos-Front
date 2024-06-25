@@ -1,6 +1,7 @@
 .container {
   display: flex;
   flex-direction: column;
+  margin-top: 2rem;
 }
 
 .welcome_container {
@@ -23,7 +24,6 @@
   background-color: #0000004d;
   box-shadow: 0 0 10px #0000005e;
   padding-bottom: 2rem;
-
 }
 
 .welcome_title {
@@ -112,7 +112,7 @@
   justify-content: center;
   align-items: center;
   margin: 2rem 0;
-  scroll-margin-top: 14ex;
+  scroll-margin-top: 18ex;
 }
 
 .thanks {
@@ -188,7 +188,6 @@
 .yt {
   color: #fc3636;
   text-shadow: 2px 2px 3px #bb1f1f, -2px -2px 3px #bb1f1f;
-
 }
 
 .tw {
