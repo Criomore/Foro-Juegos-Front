@@ -1,53 +1,69 @@
-import style from './Post.module.css'
-import { GrSend } from 'react-icons/gr'
+import style from './Pots.module.css'
+import { Carousel } from 'react-bootstrap'
+import { SlOptions } from 'react-icons/sl'
 import { BiRepost } from 'react-icons/bi'
+import { IoIosArrowUp, IoIosArrowDown, IoIosSend } from 'react-icons/io'
+import Coment from '../Comment/Comment.component'
+import CommentContainer from '../CommentContainer/CommentContainer.component'
 
-const Post = () => {
+const Post = ({
+  avatar = 'https://images.unsplash.com/photo-1597378609416-47cc937b294c?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  nickname = 'NutriaAguada31',
+  date = '25/06/2024',
+  caption = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus placeat assumenda suscipit dolores eum?',
+  images = [
+    'https://images.unsplash.com/photo-1597378609416-47cc937b294c?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D '
+  ],
+  like = 17,
+  dislike = 5,
+  score = 12
+}) => {
   return (
-    <div className={style.post_container}>
-      <div className={style.post_userdata}>
-        <div className={style.img_container}>
-          <img
-            className={style.userdata_img}
-            src='https://pbs.twimg.com/profile_images/689170748418711554/-RGSBLf9_400x400.jpg'
-            alt='img'
-          />
+    <div className={style.container}>
+      <div className={style.info_user}>
+        <div className={style.avatar_container}>
+          <img className={style.avatar} src={avatar} alt='' />
         </div>
-        <div className={style.userdata_info}>
-          <div className={style.info_name}>NutriaAguada</div>
-          <div className={style.info_category}>#Soy_Nuti</div>
+        <div className={style.info}>
+          <div className={style.nickname}>{nickname}</div>
+          <div className={style.date}>{date}</div>
         </div>
-        <div className={style.userdata_date}>19 MAR 2024</div>
-      </div>
-      <div className={style.post_body}>
-        <div className={style.body_description}>
-          "Conectando ideas para inspirar conversaciones. Explora, aprende y
-          conecta en nuestra comunidad virtual. Descubre conocimiento sin
-          límites y comparte tus pensamientos. Bienvenidos al foro/blog donde
-          tus ideas cobran vida."
-          <br />
-          <span className={style.body_desciption_author}>-ChatGPT.</span>
+        <div className={style.options}>
+          <SlOptions />
         </div>
       </div>
-      <div className={style.post_interactions}>
-        <div className={style.post_interactions_reactions}>
-          <div className={style.interactions_like}>+ 1.200</div>
-          <div className={style.interactions_dislike}>- 300</div>
+      <div className={style.body}>
+        <div className={style.caption}>{caption}</div>
+        <Carousel className={style.carousel}>
+          {images?.map((img, i) => (
+            <Carousel.Item key={i} className={style.img_container}>
+              <img src={img} className={style.img} />
+            </Carousel.Item>
+          ))}
+        </Carousel>
+      </div>
+      <div className={style.interactions}>
+        <div className={style.container_ld}>
+          <div className={style.likes}>
+            <IoIosArrowUp />
+            {like}
+          </div>
+          <div className={style.dislikes}>
+            <IoIosArrowDown /> {dislike}
+          </div>
         </div>
-        <div className={style.post_interactions_score}>
-          <div className={style.score}>Score: 900</div>
-        </div>
-        <div className={style.post_interactions_share}>
-          <div className={style.share_repost}>
+        <div className={style.score}>Score: {score}</div>
+        <div className={style.container_rs}>
+          <div className={style.repost}>
             <BiRepost />
-            Repost
           </div>
-          <div className={style.share_send}>
-            <GrSend className={style.icon} />
-            Enviar
+          <div className={style.send}>
+            <IoIosSend />
           </div>
         </div>
       </div>
+
+      <CommentContainer />
     </div>
   )
 }

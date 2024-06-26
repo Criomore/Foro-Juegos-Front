@@ -1,0 +1,47 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: .5rem 1rem;
+  background: #fff;
+  margin: .2rem;
+  border-radius: .5rem;
+}
+
+.info_user {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  width: 70%;
+}
+
+.avatar {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid #000;
+}
+
+.nickname{
+  font-size: 1rem;
+}
+
+.date{
+  font-size: .7rem;
+}
+
+.reactions {
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+}
+
+.comment {
+  margin: .5rem auto 0;
+  width: 100%;
+  text-align: justify;font-size: .9rem;
+}
