@@ -12,6 +12,7 @@
   height: 14rem;
   overflow: hidden;
   border-bottom: 2px solid #000;
+  box-shadow: 0 0 10px #000;
 }
 
 .portada {
@@ -39,19 +40,24 @@
   border: 2px solid #000;
   top: 0.5rem;
   z-index: 100;
+  box-shadow: 0 0 5px #000;
 }
 
 .user_info {
   height: 5rem;
   display: grid;
   grid-template-columns: 28% 22% 10% 39%;
-  color: #fff;
+  color: #ffffff;
   width: 100%;
-  background: #0000007e;
+  background: transparent;
+  backdrop-filter: blur(3px);
   position: absolute;
   top: 9rem;
+  left: 0;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0 #000;
 }
 
 .contain_names {
@@ -62,7 +68,6 @@
 }
 
 .apodo {
-  text-shadow: 2px 2px 3px #4f3dbd;
   font-size: 1.5rem;
   font-weight: bold;
 }
@@ -84,29 +89,60 @@
 }
 
 .totales {
-  background: #000;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 80%;
+  width: 100%;
   color: #fff;
-  font-size: .8rem;
-  padding: .5rem;
-  gap: 1rem;
+  font-size: 0.8rem;
+  padding: 0.5rem;
+  gap: 1.5rem;
+  letter-spacing: 1px;
 }
 
 .title {
-  font-size: .9rem;
-  color: #4f3dbd;
+  font-size: 1rem;
+  color: #fff;
   text-align: center;
   font-weight: 700;
 }
 
-.topic, .hashtag, .total_score, .total_posts, .total_followers{
-  border-right: 2px solid #4f3dbd;
-  padding-right: 1rem;
+.span {
+  display: flex;
+  width: 2px;
+  height: 2.5rem;
+  border: 1px solid #fff;
 }
 
 .numbers {
+  font-weight: 600;
   text-align: center;
+  font-size: 1.2rem;
+}
+
+.content {
+  width: 80%;
+  margin: 0 auto;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.profile_nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 0 10px #000;
+}
+
+.nav_title {
+  font-size: 1.2rem;
+  color: #fff;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 2px;
 }

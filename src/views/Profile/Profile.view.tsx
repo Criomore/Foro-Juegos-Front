@@ -1,5 +1,6 @@
 import { Image } from 'react-bootstrap'
 import style from './Profile.module.css'
+import Post from '../../components/Post/Post.component'
 
 export const Profile = () => {
   return (
@@ -23,7 +24,7 @@ export const Profile = () => {
         </div>
         <div className={style.contain_info}>
           <div className={style.nac}>
-            <span>🇨🇴 </span>Colombia
+            <span>🇨🇴 </span>COL
           </div>
           <div className={style.cum}>
             <span>🎂 </span>31/05/2003
@@ -31,38 +32,38 @@ export const Profile = () => {
         </div>
 
         <div className={style.contain_status}>
-          <div className={style.nac}>
-            "La inteligencia me persigue pero soy mas rapida"
+          <div className={style.totales}>
+            <div className={style.total_posts}>
+              <div className={style.title}>PUBLICACIONES</div>
+              <div className={style.numbers}>10</div>
+            </div>
+            <span className={style.span}></span>
+
+            <div className={style.total_followers}>
+              <div className={style.title}>SEGUIDORES</div>
+              <div className={style.numbers}>31</div>
+            </div>
+            <span className={style.span}></span>
+
+            <div className={style.total_followed}>
+              <div className={style.title}>SEGUIDOS</div>
+              <div className={style.numbers}>13</div>
+            </div>
           </div>
         </div>
       </div>
-      <div className={style.totales}>
-        <div className={style.topic}>
-          <div className={style.title}>TEMAS DE INTERES</div>
-          <div className={style.description}>
-            Juegos - Redes sociales - Estilo de vida
-          </div>
+      <div className={style.content}>
+        <div className={style.profile_nav}>
+          <div className={style.nav_title}>Publicaciones</div>
+          <div className={style.nav_title}>Ranking</div>
+          <div className={style.nav_title}>Explorar</div>
+          <div className={style.nav_title}>Fotos</div>
+          <div className={style.nav_title}>Editar</div>
         </div>
-        <div className={style.hashtag}>
-          <div className={style.title}>HASHTAGS MAS USADOS</div>
-          <div className={style.description}>
-            #LADAWLDKM - #OAIDWOD - #MAINCRA
-          </div>
-        </div>
-        <div className={style.total_posts}>
-          <div className={style.title}>PUBLICACIONES</div>
-          <div className={style.numbers}>10</div>
-        </div>
-        <div className={style.total_followers}>
-          <div className={style.title}>SEGUIDORES</div>
-          <div className={style.numbers}>31</div>
-        </div>
-        <div className={style.total_followed}>
-          <div className={style.title}>SEGUIDOS</div>
-          <div className={style.numbers}>13</div>
+        <div className={style.body}>
+          <Post />
         </div>
       </div>
-      
     </div>
   )
 }
