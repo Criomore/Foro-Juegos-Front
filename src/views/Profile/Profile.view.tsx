@@ -62,6 +62,7 @@ export const Profile = () => {
         </div>
         <div className={style.body}>
           <Post />
+          <Post />
         </div>
       </div>
     </div>
