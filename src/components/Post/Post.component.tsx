@@ -3,7 +3,6 @@ import { Carousel } from 'react-bootstrap'
 import { SlOptions } from 'react-icons/sl'
 import { BiRepost } from 'react-icons/bi'
 import { IoIosArrowUp, IoIosArrowDown, IoIosSend } from 'react-icons/io'
-import Coment from '../Comment/Comment.component'
 import CommentContainer from '../CommentContainer/CommentContainer.component'
 
 const Post = ({
@@ -64,6 +63,8 @@ const Post = ({
       </div>
 
       <CommentContainer />
+
+      <div className={style.see_more}>Ver más</div>
     </div>
   )
 }

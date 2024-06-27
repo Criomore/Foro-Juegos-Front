@@ -3,8 +3,10 @@
   width: 80%;
   display: flex;
   flex-direction: column;
-  background: #e2e2e2;
+  background: #000;
   border-radius: 0.5rem;
+  color: #fff;
+  border: 1px solid #3b3b3b;
 }
 
 .info_user {
@@ -14,7 +16,7 @@
   align-items: center;
   gap: 1rem;
   margin-bottom: 0.5rem;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #3b3b3b;
 }
 
 .avatar_container {
@@ -22,7 +24,7 @@
   height: 2.5rem;
   overflow: hidden;
   border-radius: 50%;
-  border: 1px solid #000;
+  border: 1px solid #3b3b3b;
 }
 
 .avatar {
@@ -89,6 +91,7 @@
   padding: 0.5rem;
   font-size: 1rem;
   font-weight: 600;
+  border-bottom: 1px solid #3b3b3b;
 }
 
 .container_ld {
@@ -145,4 +148,14 @@
   justify-content: flex-end;
   align-items: center;
   gap: 2rem;
+}
+
+.see_more{
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-top: 1px solid #3b3b3b;
+  padding: .5rem 0;
+  cursor: pointer;
 }
