@@ -38,7 +38,7 @@ const Landing = () => {
         </div>
         <Carousel className={style.carousel} interval={5000} indicators={false}>
           <Carousel.Item>
-            <Post />
+            <PostLanding />
           </Carousel.Item>
         </Carousel>
 
