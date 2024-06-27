@@ -121,9 +121,9 @@
 }
 
 .content {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
-  background: #000;
+  background: #000000c0;
   display: flex;
   justify-content: center;
   flex-direction: column;

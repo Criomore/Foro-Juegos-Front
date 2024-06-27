@@ -1,0 +1,148 @@
+.container {
+  margin: 1rem auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  background: #e2e2e2;
+  border-radius: 0.5rem;
+}
+
+.info_user {
+  padding: 0.5rem 1rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid #000;
+}
+
+.avatar_container {
+  width: 2.5rem;
+  height: 2.5rem;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 1px solid #000;
+}
+
+.avatar {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nickname {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.date {
+  font-size: 0.9rem;
+  color: #5c5c5c;
+}
+
+.options {
+  position: relative;
+  left: 55%;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.caption {
+  padding: 0 1rem;
+}
+
+.carousel {
+  width: 100%;
+  height: 25rem;
+  margin-bottom: 0.5rem;
+}
+
+.img {
+  height: 25rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.interactions {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.container_ld {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.likes,
+.dislikes {
+  width: auto;
+  padding: 0.3rem 0.7rem 0;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+  border: 1px solid transparent;
+  gap: 0.2rem;
+  cursor: pointer;
+}
+
+.likes {
+  color: #b40808;
+}
+
+.likes:hover {
+  border: 1px solid #b40808;
+}
+
+.dislikes:hover {
+  border: 1px solid #9921c5;
+}
+
+.dislikes {
+  align-items: center;
+  color: #9921c5;
+}
+
+.score {
+  font-size: 1.2rem;
+}
+
+.repost,
+.send {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.container_rs {
+  width: 25%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2rem;
+}

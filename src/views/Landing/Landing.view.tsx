@@ -2,7 +2,7 @@ import { MdKeyboardDoubleArrowDown } from 'react-icons/md'
 import { Carousel, Image } from 'react-bootstrap'
 
 import style from './Landing.module.css'
-import Post from '../../components/Post/Post.component'
+import PostLanding from '../../components/PostLanding/PostLanding.component'
 import NavLanding from '../NavLanding/NavLanding.view'
 import ThemeCarousel from '../ThemesCarousel/ThemeCarousel.component'
 import CardInfo from '../../components/CardInfo/CardInfo.component'
@@ -38,7 +38,7 @@ const Landing = () => {
         </div>
         <Carousel className={style.carousel} interval={5000} indicators={false}>
           <Carousel.Item>
-            <Post />
+            <PostLanding />
           </Carousel.Item>
         </Carousel>
 
