@@ -4,7 +4,7 @@ import style from './NavFeed.module.css'
 const NavFeed = () => {
   return (
     <div>
-      <Navbar sticky='top' className={style.contain}>
+      <Navbar fixed='top' className={style.contain}>
         <img
           src='https://i.ibb.co/5F1PjJz/criomore-logo.jpg'
           width='40'

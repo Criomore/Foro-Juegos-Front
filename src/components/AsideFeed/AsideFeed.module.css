@@ -1,10 +1,12 @@
 .container {
   grid-column: 1/2;
+  grid-row: 2/3;
   background-color: #000000c0;
+  position: sticky;
+  top: 2rem;
   color: #fff;
   border-top: 1px solid #fff;
-  margin-top: 0.2px;
-  height: 100vh;
+  width: 100%;
 }
 
 .info {
@@ -25,26 +27,34 @@
   margin: 1rem 1rem 0.5rem;
 }
 
-.contain_thems {
-  background-color: #0000003a;
+.contain_thems_VG, .contain_thems_TEC, .contain_thems_EC, .contain_thems_CR {
+  background-color: #000000b4;
   margin: 0.5rem;
   border-radius: 0.3rem;
 }
 
 .subtitle_themes {
-  font-size: .9rem;
+  font-size: 0.9rem;
   font-weight: 600;
+  width: 100%;
   cursor: pointer;
   border-bottom: 1px solid #919191;
+  display: flex;
 }
 
 .icon {
-  margin-left: 6rem;
+  display: flex;
+  width: 10%;
+}
+
+.theme {
+  display: flex;
+  width: 90%;
 }
 
 .btn {
   width: 100%;
-  padding: .5rem;
+  padding: 0.5rem;
   margin: 0;
   text-align: start;
   border-radius: 0;

@@ -1,13 +1,13 @@
-import AsideFeed from "../../components/AsideFeed/AsideFeed.component"
-import NavFeed from "../NavFeed/NavFeed.view"
+import AsideFeed from '../../components/AsideFeed/AsideFeed.component'
+import NavFeed from '../NavFeed/NavFeed.view'
 import style from './Feed.module.css'
 
 const Feed = () => {
   return (
     <div>
-      <NavFeed/>
+      <NavFeed />
       <div className={style.container}>
-      <AsideFeed/>
+        <AsideFeed />
       </div>
     </div>
   )
