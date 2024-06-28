@@ -3,9 +3,11 @@
   grid-row: 2/3;
   background-color: #000000c0;
   color: #fff;
-  width: 100%;
+  width: 20vw;
   height: 100%;
+  top: 10vh;
   overflow: auto;
+  position: fixed;
 }
 
 .container::-webkit-scrollbar {
