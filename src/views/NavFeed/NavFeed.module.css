@@ -4,6 +4,12 @@
   height: 4rem;
 }
 
+.contain_profile{
+  background-color: #000;
+  width: 100%;
+  height: 4rem;
+}
+
 .logo {
   border-radius: 50%;
   margin-left: 3rem;

@@ -1,10 +1,15 @@
 import { Button, Nav, Navbar, Form, NavDropdown } from 'react-bootstrap'
 import style from './NavFeed.module.css'
+import { useHref } from 'react-router-dom'
 
 const NavFeed = () => {
+  const path = useHref('')
   return (
     <div>
-      <Navbar fixed='top' className={style.contain}>
+      <Navbar
+        fixed='top'
+        className={style[path === '/feed' ? 'contain' : 'contain_profile']}
+      >
         <img
           src='https://i.ibb.co/5F1PjJz/criomore-logo.jpg'
           width='40'
