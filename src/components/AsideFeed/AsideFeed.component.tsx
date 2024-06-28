@@ -4,6 +4,8 @@ import { BsInfoLg } from 'react-icons/bs'
 import { FaRankingStar } from 'react-icons/fa6'
 import { TiStarFullOutline } from 'react-icons/ti'
 import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io'
+import { MdAddCircleOutline, MdGroupWork } from 'react-icons/md'
+import { BiWorld } from 'react-icons/bi'
 import { Collapse } from 'react-bootstrap'
 import { useState } from 'react'
 
@@ -17,20 +19,20 @@ const AsideFeed = () => {
     <div className={style.container}>
       <div className={style.info}>
         <span className={style.span}>
-          <GoHomeFill /> Inicio
+          <GoHomeFill className={style.icon_info} /> Inicio
         </span>
         <span className={style.span}>
-          <BsInfoLg /> Sobre Criomore
+          <BsInfoLg className={style.icon_info} /> Sobre Criomore
         </span>
         <span className={style.span}>
-          <FaRankingStar /> Ranking
+          <FaRankingStar className={style.icon_info} /> Ranking
         </span>
         <span className={style.span}>
-          <TiStarFullOutline /> Meta
+          <TiStarFullOutline className={style.icon_info} /> Meta
         </span>
       </div>
 
-      <div>
+      <div className={style.contain_themes}>
         <div className={style.subtitle}>TEMAS</div>
 
         <div className={style.contain_thems_VG}>
@@ -148,12 +150,24 @@ const AsideFeed = () => {
         </div>
       </div>
 
-      <div>
-        <div>laskjdlak</div>
+      <div className={style.info}>
+        <span className={style.span}>
+          <MdAddCircleOutline className={style.icon_info} />
+          Crear publicacion
+        </span>
+        <span className={style.span}>
+          <BiWorld className={style.icon_info} />
+          Conocer personas
+        </span>
+        <span className={style.span}>
+          <MdGroupWork className={style.icon_info} />
+          Ruleta
+        </span>
       </div>
 
-
-
+      <div className={style.criomore}>
+        criomore 
+      </div>
     </div>
   )
 }
